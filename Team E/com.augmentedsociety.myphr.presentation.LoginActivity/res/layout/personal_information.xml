@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+                android:id="@+id/personal_profile_button"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_default"
+                android:onClick="HandlePersonalProfileButton"
+                android:scaleType="fitXY"
+                android:src="@drawable/person"
+                android:visibility="gone" />
+
+            <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+                android:id="@+id/allergies_button"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_default"
+                android:onClick="HandleAllergiesButton"
+                android:scaleType="fitXY"
+                android:src="@drawable/pollen" />
+
+            <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+                android:id="@+id/immunizations_button"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_default"
+                android:onClick="HandleImmunizationsButton"
+                android:scaleType="fitXY"
+                android:src="@drawable/shot" />
+
+            <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+                android:id="@+id/medications_button"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_default"
+                android:onClick="HandleMedicationsButton"
+                android:scaleType="fitXY"
+                android:src="@drawable/pill_icon" />
+
+            <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+                android:id="@+id/medical_conditions_button"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_default"
+                android:onClick="HandleMedicalConditionsButton"
+                android:scaleType="fitXY"
+                android:src="@drawable/first_aid_kit_small" />
+
+            <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+                android:id="@+id/documents_button"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_default"
+                android:onClick="HandleDocumentsButton"
+                android:scaleType="fitXY"
+                android:src="@drawable/document" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/personal_profile_cell"
+            layout="@layout/personal_information_profile"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/allergies_cell"
+            layout="@layout/view_allergies"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/immunizations_cell"
+            layout="@layout/view_immunizations"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/medications_cell"
+            layout="@layout/view_medications"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/new_allergy_cell"
+            layout="@layout/personal_information_allergies"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/new_immunizations_cell"
+            layout="@layout/personal_information_immunizations"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/new_medications_cell"
+            layout="@layout/personal_information_medications"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/documents_cell"
+            layout="@layout/personal_information_documents"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/medical_conditions_cell"
+            layout="@layout/personal_information_conditions"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/personal_information_welcome_page"
+            layout="@layout/personal_information_welcome"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

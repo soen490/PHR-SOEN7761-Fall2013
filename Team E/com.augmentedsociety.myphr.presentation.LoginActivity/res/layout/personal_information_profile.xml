@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:id="@+id/fname_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/first_name" />
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/first_name" />
+
+        <TextView
+            android:id="@+id/lname_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/last_name" />
+
+        <TextView
+            android:id="@+id/dob_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/DOB" />
+
+        <Button 
+            android:id="@+id/dateButtonDOB"
+            android:text="@string/date"
+            android:onClick="dateButtonPressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:calendarViewShown="false"/>
+
+        <TextView
+            android:id="@+id/phone_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone" />
+
+        <EditText
+            android:id="@+id/home_cell_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/phone" />
+
+        <TextView
+            android:id="@+id/address_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/address" />
+        
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:hint="@string/address"
+            android:lines="4"
+            android:maxLines="4"
+            android:minLines="4"
+            android:scrollbars="vertical"
+            android:singleLine="false" />
+
+        <TextView
+            android:id="@+id/email_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email" />
+        
+        <EditText
+            android:id="@+id/email_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email" />
+
+        <TextView
+            android:id="@+id/medicare_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/medicare" />
+        
+        <EditText
+            android:id="@+id/medicare_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/medicare" />
+
+        <TextView
+            android:id="@+id/insurance_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/insurance" />
+        
+        <EditText
+            android:id="@+id/insurance_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/insurance" />
+        
+        <TextView
+            android:id="@+id/emergency_contact_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/emergency_contacts" />
+
+        <EditText
+            android:id="@+id/emergency_contact_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/emergency_contact_1" />
+
+        <EditText
+            android:id="@+id/emergency_contact_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/emergency_contact_2" />
+
+        <Button
+            android:id="@+id/add_emergency_contact"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_emergency_contact" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:onClick="handleCancel"
+                android:text="@string/cancel" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:onClick="submit"
+                android:text="@string/save" />
+        </LinearLayout>
+    </TableLayout>
+
+</ScrollView>

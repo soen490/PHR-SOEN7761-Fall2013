@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/File_Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/body_temperature"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#dddddd"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/temperature_value"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="right"
+                android:inputType="number|numberDecimal" />
+
+            <requestFocus />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/celsius"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <DatePicker
+                    android:id="@+id/datePickerTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:calendarViewShown="false"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TimePicker
+                    android:id="@+id/timePickerTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="finish"
+                    android:text="@string/cancel"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="submit"
+                    android:text="@string/submit"
+                    android:visibility="gone" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="5px"
+        android:gravity="center_horizontal|bottom"
+        android:paddingTop="2px" >
+
+        <ImageButton
+            android:id="@+id/Button1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:onClick="bluetooth"
+            android:src="@drawable/bluetooth_small" />
+    </LinearLayout>
+
+</LinearLayout>

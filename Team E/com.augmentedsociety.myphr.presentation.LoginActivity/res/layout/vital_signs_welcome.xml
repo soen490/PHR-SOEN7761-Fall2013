@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:windowSoftInputMode="stateHidden" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/txtBPM"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/bpm"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/blood_pressure_heart_rate_valueO"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="right"
+                android:longClickable="false"
+                android:onClick="handleButtonPressed" />
+
+            <TextView
+                android:id="@+id/txtBPMUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unitMin"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txtSys"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/sys"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/blood_pressure_systolic_valueO"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="right"
+                android:longClickable="false"
+                android:onClick="handleButtonPressed" />
+
+            <TextView
+                android:id="@+id/txtSysUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unitMMHG"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txtDia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/dia"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/blood_pressure_diastolic_valueO"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="right"
+                android:longClickable="false"
+                android:onClick="handleButtonPressed" />
+
+            <TextView
+                android:id="@+id/txtDiaUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unitMMHG"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/weight"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/weight_valueO"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="right"
+                android:longClickable="false"
+                android:onClick="handleButtonPressed" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtWeightUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kg"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtO2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/o2"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/o2percent_valueO"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:focusable="false"
+                android:gravity="right"
+                android:longClickable="false"
+                android:onClick="handleButtonPressed" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtO2Unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/percent"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtTemp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/temp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/temperature_valueO"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="right"
+                android:longClickable="false"
+                android:onClick="handleButtonPressed" />
+
+            <TextView
+                android:id="@+id/txtTempUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/celsius"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txtBlood"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/blood_sugar"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/blood_sugar_valueO"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="right"
+                android:longClickable="false"
+                android:onClick="handleButtonPressed" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtBloodUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mg_dl"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowDate"
+            android:background="#60ff0000" >
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/date"
+                android:textSize="19sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/dateTextEdit"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="left"
+                android:longClickable="false"
+                android:textSize="19sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtBloodUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowTime"
+            android:background="#60ff0000" >
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/time"
+                android:textSize="19sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/timeTextEdit"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="left"
+                android:longClickable="false"
+                android:textSize="19sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtBloodUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/dateMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="handleButtonPressed"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrow_left_small"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/listButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:onClick="handleButtonPressed"
+                android:text="@string/entries"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/datePlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="handleButtonPressed"
+                android:src="@drawable/arrow_right_small"
+                android:visibility="visible" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal|bottom" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|bottom" >
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/newRecordPlaceHolderLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="handleButtonPressed"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/arrow_left_small"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/BackHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onClick"
+                    android:text="@string/Back_home" />
+
+                <Button
+                    android:id="@+id/newRecordButton"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:onClick="handleButtonPressed"
+                    android:text="@string/new_entry"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/newRecordPlaceHolderRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="handleButtonPressed"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/arrow_left_small"
+                    android:visibility="invisible" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/menuButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="handleButtonPressed"
+                    android:text="@string/exit"
+                    android:visibility="gone" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

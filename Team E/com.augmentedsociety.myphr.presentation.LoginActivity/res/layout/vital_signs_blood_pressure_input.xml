@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/File_Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/blood_pressure"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#dddddd" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bpm"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:id="@+id/blood_pressure_heart_rate_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:imeOptions="actionNext"
+                    android:inputType="number|numberDecimal" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/patientName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unitMin"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="23dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#dddddd" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sys"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:id="@+id/blood_pressure_systolic_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:imeOptions="actionNext"
+                    android:textDirection="rtl"
+                    android:inputType="number|numberDecimal" />
+
+                <TextView
+                    android:id="@+id/NotesView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unitMMHG"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="23dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#dddddd" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dia"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:id="@+id/blood_pressure_diastolic_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:imeActionId="@+id/diaNext"
+                    android:imeOptions="actionNext"
+                    android:textDirection="rtl"
+                    android:inputType="number|numberDecimal" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unitMMHG"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="23dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <DatePicker
+                    android:id="@+id/datePickerBP"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:calendarViewShown="false"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TimePicker
+                    android:id="@+id/timePickerBP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="finish"
+                    android:text="@string/cancel"
+                    android:visibility="gone" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minWidth="64dip"
+                    android:onClick="submit"
+                    android:text="@string/submit"
+                    android:visibility="gone" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="5px"
+        android:gravity="center_horizontal|bottom"
+        android:paddingTop="2px" >
+
+        <ImageButton
+            android:id="@+id/Button3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:onClick="bluetooth"
+            android:src="@drawable/bluetooth_small" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".barcode.ScanActivity" >
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.00"
+        android:text="@string/ResultText" />
+
+    <Button
+        android:id="@+id/scanQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:onClick="onClick"
+        android:text="@string/Scan_QR_code" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:text="@string/OR"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+         android:onClick="onClick2"
+        android:text="@string/Room_and_Bed_number" />
+
+</LinearLayout>

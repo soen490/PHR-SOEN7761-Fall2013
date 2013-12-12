@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="clip_horizontal|left|right|top"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/patientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_name" />
+
+    <EditText
+        android:id="@+id/Patient_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/PatientName" />
+
+    <TextView
+        android:id="@+id/PatientLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/patientLast" />
+
+    <EditText
+        android:id="@+id/Patient_Last"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/File_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/FileNoTV" />
+
+    <EditText
+        android:id="@+id/fileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/file_Number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Room" />
+
+    <EditText
+        android:id="@+id/Room_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/bed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Bed" />
+
+    <EditText
+        android:id="@+id/Bed_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="@string/bed_number" android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/NotesView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/NotesTV" />
+
+    <EditText
+        android:id="@+id/Notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:ems="10"
+        android:text="@string/Notes" android:inputType="text"/>
+
+    <Button
+        android:id="@+id/SubmitNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:onClick="onClick2"
+        android:text="@string/submitNote" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/Next" />
+
+</LinearLayout>
