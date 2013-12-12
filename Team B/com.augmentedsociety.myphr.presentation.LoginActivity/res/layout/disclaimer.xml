@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/diclaimer_page_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/disclaimer" />
+
+    <TextView
+        android:id="@+id/diclaimer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/disclaimer_text" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="97dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:src="@drawable/ic_disclaimer_web" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/decline_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight=".50"
+            android:onClick="decline"
+            android:text="@string/decline" />
+
+        <Button
+            android:id="@+id/accept_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight=".50"
+            android:onClick="accept"
+            android:text="@string/accept" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

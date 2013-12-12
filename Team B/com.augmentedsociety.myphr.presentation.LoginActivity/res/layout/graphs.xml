@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:onClick="onButtonPressed"
+            android:id="@+id/rowBloodPressure">
+
+            <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+                android:id="@+id/buttonBloodPressure"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_default"
+                android:onClick="onButtonPressed"
+                android:scaleType="fitXY"
+                android:src="@drawable/heart" />
+
+            <TextView
+                android:id="@+id/BloodPressureDescr"
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/blood_pressure"
+                android:textAppearance="@style/boldText"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow android:background="#dededede"
+            android:id="@+id/rowWeight"
+            android:onClick="onButtonPressed" >
+
+            <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+                android:id="@+id/buttonWeight"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_default"
+                android:onClick="onButtonPressed"
+                android:scaleType="fitXY"
+                android:src="@drawable/weight_small" />
+
+            <TextView
+                android:id="@+id/weightDescr"
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/weight"
+                android:textAppearance="@style/boldText"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowO2Saturation"
+            android:onClick="onButtonPressed">
+
+            <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+                android:id="@+id/buttonO2Saturation"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_default"
+                android:onClick="onButtonPressed"
+                android:scaleType="fitXY"
+                android:src="@drawable/o2hand" />
+
+            <TextView
+                android:id="@+id/O2Descr"
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/o2_saturation"
+                android:textAppearance="@style/boldText"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow android:background="#dededede"
+            android:id="@+id/rowTemperature"
+            android:onClick="onButtonPressed">
+
+            <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+                android:id="@+id/buttonTemperature"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_default"
+                android:onClick="onButtonPressed"
+                android:scaleType="fitXY"
+                android:src="@drawable/thermometer" />
+
+            <TextView
+                android:id="@+id/temperatureDescr"
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/temperature"
+                android:textAppearance="@style/boldText"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:visibility="visible" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowBloodSugar"
+            android:onClick="onButtonPressed">
+
+            <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+                android:id="@+id/buttonBloodSugar"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_default"
+                android:onClick="onButtonPressed"
+                android:scaleType="fitXY"
+                android:src="@drawable/diabetes2" />
+
+            <TextView
+                android:id="@+id/BloodSugarDescr"
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/blood_sugar"
+                android:textAppearance="@style/boldText"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:visibility="visible" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onButtonPressed"
+            android:text="@string/exit"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

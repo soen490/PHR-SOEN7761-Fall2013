@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/documents_menu" android:title="@string/documents_manage" android:titleCondensed="@string/documents_manage">
+        <menu>
+            <item android:id="@+id/menu_add_document" 
+                android:title="@string/add_document" 
+                android:titleCondensed="@string/add_document"/>
+            
+            <item android:id="@+id/menu_add_document_from_camera" 
+                android:title="@string/add_document_from_camera"
+                android:titleCondensed="@string/add_document_from_camera"/>
+            
+            <item android:id="@+id/menu_clear_all_documents" 
+                android:title="@string/clear_all_documents" 
+                android:titleCondensed="@string/clear_all_documents"/>
+            
+            <item android:id="@+id/menu_sort_documents" 
+                android:title="@string/sort_documents" 
+                android:titleCondensed="@string/sort_documents"/>
+        </menu>
+    </item>
+
+
+</menu>

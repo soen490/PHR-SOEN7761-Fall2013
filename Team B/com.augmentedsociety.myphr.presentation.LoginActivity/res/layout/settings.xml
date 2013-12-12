@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+		/>
+
+        <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+            android:id="@+id/set_measurement_profiles_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default"
+            android:scaleType="fitXY"
+            android:onClick="handleMeasurementProfiles"
+            android:src="@drawable/measurement_profiles"
+            android:visibility="invisible" />
+
+        <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+            android:id="@+id/diagnostics_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default"
+            android:onClick="handleDiagnosticsButton"
+            android:scaleType="fitXY"
+            android:src="@drawable/notepad"
+            android:visibility="invisible" />
+
+        <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+            android:id="@+id/view_tutorial_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="handleViewTutorialButton"
+            android:scaleType="fitXY"
+            android:src="@drawable/tutorial"
+            android:visibility="invisible" />
+
+        <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+            android:id="@+id/languages_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="handleLanguagesButton"
+            android:scaleType="fitXY"
+            android:src="@drawable/languages"
+            android:visibility="invisible" />
+
+        <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+            android:id="@+id/change_password_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="handlePasswordChangeButton"
+            android:scaleType="fitXY"
+            android:src="@drawable/password_icon"
+            android:visibility="invisible" >
+        </com.augmentedsociety.myphr.presentation.customviews.SquareImageButton>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/languages_cell"
+        layout="@layout/settings_languages"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/change_password_cell"
+        layout="@layout/settings_change_password"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/measurement_profile_cell"
+        layout="@layout/settings_measurement_profiles"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/view_tutorial_cell"
+        layout="@layout/settings_change_password"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/diagnostics_cell"
+        layout="@layout/settings_diagnostics"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/settings_welcome_page"
+        layout="@layout/settings_welcome"
+        android:visibility="gone" />
+
+</LinearLayout>

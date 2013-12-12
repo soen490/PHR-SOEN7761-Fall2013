@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/vitalSignsActivity" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal" >
+	    
+ 		<LinearLayout
+		    android:layout_width="98dp"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" >
+
+			<com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+			    android:id="@+id/blood_pressure"
+			    android:layout_width="63dp"
+			    android:layout_height="63dp"
+			    android:layout_weight="1"
+			    android:src="@drawable/heart"
+			    android:background="@android:drawable/btn_default"
+		        android:scaleType="fitXY"
+			    android:onClick="handleButtonPressed" /> 
+		    <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+		        android:id="@+id/body_weight"
+		        android:layout_width="63dp"
+		        android:layout_height="63dp"
+		        android:layout_weight="1"
+		        android:src="@drawable/weight_small"
+		        android:background="@android:drawable/btn_default"
+		        android:scaleType="fitXY"
+		        android:onClick="handleButtonPressed"/>
+
+		    <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+		        android:id="@+id/o2_saturation"
+		        android:layout_width="63dp"
+		        android:layout_height="63dp"
+		        android:layout_weight="1"
+		        android:src="@drawable/o2hand"
+		        android:background="@android:drawable/btn_default"
+		        android:scaleType="fitXY"	        
+		        android:onClick="handleButtonPressed" />
+ 				
+		    <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+		        android:id="@+id/body_temperature"
+		        android:layout_width="63dp"
+		        android:layout_height="63dp"
+		        android:layout_weight="1"
+		        android:src="@drawable/thermometer"
+		        android:background="@android:drawable/btn_default"
+		        android:scaleType="fitXY"
+		        android:onClick="handleButtonPressed" />
+
+		    <com.augmentedsociety.myphr.presentation.customviews.SquareImageButton
+		        android:id="@+id/blood_sugar"
+		        android:layout_width="63dp"
+		        android:layout_height="63dp"
+		        android:layout_weight="1"
+		        android:background="@android:drawable/btn_default"
+		        android:onClick="handleButtonPressed"
+		        android:scaleType="fitCenter"
+		        android:src="@drawable/diabetes" />
+		    
+		</LinearLayout>
+
+ 		<include 
+ 		    android:id="@+id/vital_signs_welcome_page"
+ 		    layout="@layout/vital_signs_welcome"
+ 		    android:visibility="gone"/>
+		<include
+		    android:id="@+id/blood_pressure_cell"
+		    layout="@layout/vital_signs_blood_pressure_input" 
+		    android:visibility="gone"/>
+		<include 
+		    android:id="@+id/body_weight_cell" 
+		    layout="@layout/vital_signs_weight_input" 
+		    android:visibility="gone"/>
+		<include 
+		    android:id="@+id/o2_saturation_cell" 
+		    layout="@layout/vital_signs_o2_input" 
+		    android:visibility="gone"/>
+		<include 
+		    android:id="@+id/temperature_cell" 
+		    layout="@layout/vital_signs_temperature_input" 
+		    android:visibility="gone"/>
+		<include 
+		    android:id="@+id/blood_sugar_cell" 
+		    layout="@layout/vital_signs_blood_sugar_input" 
+		    android:visibility="gone"/>
+
+ 	    <LinearLayout
+	        android:id="@+id/wellness_sub_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center_horizontal|center_vertical"
+	        android:orientation="vertical" 
+	        android:visibility="gone">
+
+	        <TextView
+	            android:id="@+id/current_wellness"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:textStyle="bold"
+	            android:textSize="25sp"
+	            /> 	        
+			<Button
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:text="@string/new_entry" 
+	            android:onClick="handleNewEntry"/>
+
+	        <Button
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:text="@string/graphs" 
+	        	android:onClick="handleGraph"/>
+	    </LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

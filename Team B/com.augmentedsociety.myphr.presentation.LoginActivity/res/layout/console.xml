@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/connect_ind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/status_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <ImageView
+        android:id="@+id/data_ind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/heart" />
+
+    <Button
+        android:id="@+id/button_register_app"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:text="Register App" />
+
+    <Button
+        android:id="@+id/button_unregister_app"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:text="Unregister App" />
+
+    <Button
+        android:id="@+id/button_connect_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="Connect Channel" />
+
+    <Button
+        android:id="@+id/button_disconnect_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect Channel" />
+
+</LinearLayout>
