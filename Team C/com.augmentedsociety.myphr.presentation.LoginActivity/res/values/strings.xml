@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PHR</string>
+    <string name="slogan">Augmented Synergy - This is our slogan</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_my_phr">PHR</string>
+    <string name="menu">Menu</string>
+
+    <!-- Strings for Login Activity -->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_page">Login Page</string>
+
+    <!-- Strings for disclaimer Activity -->
+    <string name="title_activity_discalimer">Disclaimer</string>
+    <string name="disclaimer">Disclaimer:</string>
+    <string name="disclaimer_text">Augmented Syngergy is still under development and can be concerned as a BETA version. The majority of functions are implemented but bugs can still occur. </string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+
+    <!-- Strings for Main Page Activity -->
+    <string name="welcome">Welcome!</string>
+    <string name="welcome2">Welcome</string>
+    <string name="welcome_text">This is the Personal Health Record Application by Augmented Society!</string>
+
+    <!-- String for Wellness Activities -->
+    <string name="wellness">Wellness</string>
+    <string name="immunization">Immunization</string>
+    <string name="medications">Medications</string>
+    <string name="allergies">Allergies</string>
+    <string name="body_temperature">Body Temperature</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="o2_saturation">O2 Saturation</string>
+    <string name="body_weight">Body Weight</string>
+    <string name="new_entry">New Entry</string>
+    <string name="graphs">Graphs</string>
+    <string name="kg">kg</string>
+    <string name="submit">Submit</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="blood_sugar">Blood Sugar</string>
+    <string name="percent">%</string>
+    <string name="fahrenheit">&quot; \u2109&quot;</string>
+    <string name="mg_dl">mg/dL</string>
+    <string name="systolic">Systolic</string>
+    <string name="diastolic">Diastolic</string>
+    <string name="vital_signs">Vital Signs</string>
+    <string name="title_activity_view_notifications">Reminders</string>
+    <string name="title_activity_new_notification">New Reminder</string>
+    <string name="title_activity_notification_details">You have a reminder!</string>
+    <string name="notifications">Reminders</string>
+    <string name="new_notification">Create new</string>
+    <string name="enter_description">Enter description</string>
+    <string name="repeat_interval">Repeat interval:</string>
+
+    <string-array name="notif_repeat_options">
+        <item>Notify only once</item>
+        <item>30 min</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+        <item>1 day</item>
+        <item>2 days</item>
+        <item>1 week</item>
+        <item>1 month</item>
+    </string-array>
+
+    <string name="title_activity_alarm_handler">AlarmHandler</string>
+    <string name="table_view">Table</string>
+
+    <!-- Misc. Strings for Interaction" \u2109" -->
+    <string name="graph_view">Graph</string>
+    <string name="confirm_save">Data has been saved.</string>
+    <string name="create_modify_profile">CREATE OR MODIFY PROFILE</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+    <string name="DOB">Date of Birth</string>
+    <string name="phone">Phone number</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="medicare">Medicare number</string>
+    <string name="insurance">Insurance</string>
+    <string name="emergency_contact_1">Emergency contact 1</string>
+    <string name="emergency_contact_2">Emergency contact 2</string>
+    <string name="allergy">Allergy</string>
+    <string name="medication">Medication</string>
+    <string name="medical_condition">Medical condition</string>
+    <string name="documents">Documents</string>
+    <string name="clear">Clear</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="logout">Logout</string>
+    <string name="languages">Languages</string>
+    <string name="change_password">Change Password</string>
+    <string name="set_default_page">Set Default Page</string>
+    <string name="view_tutorial">View Tutorial</string>
+    <string name="diagnostics">Diagnostics</string>
+    <string name="current_password">Please enter current password</string>
+    <string name="new_password">Please enter new password</string>
+    <string name="new_password2">Please confirm new password</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="celcius">&quot; \u2103&quot;</string>
+
+    <item name="menu_info_tips" type="string">Treatment History</item>
+    <string name="notification_deleted">Reminder has been deleted</string>
+    <string name="data_saved">Data has been saved</string>
+
+    <string name="title_activity_info_tips">Treatment History</string>
+    <string name="info_and_tips_welcome">You will be redirected to find information and tips in this section.</string>
+    <string name="hello_world">Hello World. Why is this here?</string>
+    <string name="title_activity_documents">Documents</string>
+    <string name="add_document">Add Document</string>
+    <string name="documents_manage">Manage Documents</string>
+    <string name="sort_documents">Sort Documents</string>
+    <string name="clear_all_documents">Clear All Documents</string>
+    <string name="title_activity_document_form">Document</string>
+    <string name="hint_document_title">Document Title</string>
+    <string name="hint_document_description">Document Description</string>
+    <string name="document_preview">Document Preview</string>
+    <string name="notification_saved">Reminder has been set!</string>
+    <string name="notification_please_specify_name">Please specify the notification name</string>
+    <string name="temp_desc">Temperature saved.</string>
+    <string name="gen_eventtype_error">Invalid Event Type Argument</string>
+    <string name="disc_accept">Disclaimer accepted.</string>
+    <string name="disc_reject">Disclaimer rejected.</string>
+    <string name="bp_desc">Blood pressure saved.</string>
+    <string name="bs_desc">Blood sugar saved.</string>
+    <string name="weight_desc">Weight saved.</string>
+    <string name="oxy_desc">Oxygen saved.</string>
+    <string name="notif_create">Reminder created.</string>
+    <string name="notif_edit">Reminder modified.</string>
+    <string name="notif_delete">Reminder deleted.</string>
+    <string name="profile_edit">Profile entry edited.</string>
+    <string name="profile_delete">Profile entry deleted.</string>
+    <string name="setting_lang_edit">App language modified.</string>
+    <string name="app_login">Successfully logged in.</string>
+    <string name="app_logout">Successfully logged out.</string>
+    <string name="app_set">Settings has been modified.</string>
+    <string name="add_document_from_camera">Add Document (from Camera)</string>
+    <string name="notifications_generic_error">The Reminders module of AugmentedSynergy has encountered an error. We apologize for the inconvenience.</string>
+    <string name="notifications_non_existing_notif_error">An AugmentedSynergy notification cannot be displayed because it has been deleted from database.</string>
+    <string name="notifications_reminder_title">Augmented Synergy reminder</string>
+    <string name="notifications_error_details_deleted">The details for this notification have been deleted from the database</string>
+    <string name="notifications_repeats_every">Repeats every</string>
+    <string name="notifications_interval_only_once">Notify only once</string>
+    <string name="notifications_status_off">OFF</string>
+    <string name="notifications_status_on">ON</string>
+    <string name="notifications_interval_minutes">min.</string>
+    <string name="notifications_interval_hours">h.</string>
+    <string name="notifications_interval_days">d.</string>
+    <string name="notifications_interval_weeks">wk.</string>
+    <string name="notifications_interval_months">month(s)</string>
+    <string name="notifications_delete_question">Delete notification</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+    <string name="prompt_save_again">Incorrect reading. Please use correct inputs or fill all fields.</string>
+    <string name="add_emergency_contact">Add Emergency Contact</string>
+    <string name="weight_label">Weight (Kg)</string>
+    <string name="temperature_label">Temperature (F)</string>
+    <string name="glucose_label">Blood sugar (mg/dL)</string>
+    <string name="oxygen_label">Oxygen saturation (%)</string>
+    <string name="systolic_label">Systolic (mmHg)</string>
+    <string name="diastolic_label">Diastolic (mmHg)</string>
+    <string name="heart_rate_label">Heart rate (bpm)</string>
+    <string name="temperature_graph_title">Temperature trend</string>
+    <string name="glucose_graph_title">Blood sugar trend</string>
+    <string name="oxygen_graph_title">Oxygen saturation trend</string>
+    <string name="blood_pressure_graph_title">Blood pressure trend</string>
+    <string name="weight_graph_title">Weight trend</string>
+    <string name="date">Date</string>
+    <string name="visible">Visible</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+
+    <!--  Personal information strings -->
+    <string name="personal_iformation_welcome_header">Personal Information</string>
+    <string name="personal_information_welcome_message">This section will record all your personal information. You are able to specify your allergies, medications, immunizations, medical conditions, and documents here as well. Please choose an option on the left.</string>
+    <string name="nurse_image_content_description">Nurse</string>
+    
+    <!-- Settings strings -->
+    <string name="settings_welcome_header">Settings</string>
+    <string name="settings_welcome_message">This section will allow you to configure the applications\' language, reset your password, and edit your documents. </string>
+    <string name="settings_icon_description">Settings icon gear</string>
+    <string name="diagnostics_title">Diagnostics</string>
+    <string name="allergen">Allergic to&#8230;</string>
+    <string name="allergy_reaction">Allergic Reaction(s)</string>
+    <string name="reaction">Reaction</string>
+    <string name="severity">Severity of the Reaction</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
+    <string name="details">Details</string>
+    <string name="comments">Comments</string>
+    <string name="followUp">Follow Up Details</string>
+    <string name="location">Location</string>
+    <string name="location_received">Immunization Location</string>
+    <string name="posology">Posology</string>
+    <string name="dosage">Dosage</string>
+    <string name="injection">Injection</string>
+    <string name="immunization_route">Immunization Route</string>
+    <string name="oral">Oral</string>
+    <string name="lot">Lot</string>
+    <string name="lot_number">Lot Number</string>
+    <string name="company_name">Company Name</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="type">Type</string>
+    <string name="immunization_name">Immunization Name</string>
+    <string name="immunization_type">Immunization Type</string>
+    <string name="doctor">Doctor</string>
+    <string name="prescribed_by">Prescribed by&#8230;</string>
+    <string name="reason">Reason(s)</string>
+    <string name="reason_for_prescription">Reason(s) for Prescription</string>
+    <string name="end_date">End Date</string>
+    <string name="start_date">Start Date</string>
+    <string name="schedule">Schedule</string>
+    <string name="frequency">Frequency</string>
+    <string name="concentration">Concentration</string>
+    <string name="strength">Strength</string>
+    <string name="medication_name">Medication Name</string>
+    <string name="medication_type">Medication Type</string>
+    <string name="clear_logs">Clear All</string>
+    <string name="dob">Date of Birth</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="loading">Loading, please wait&#8230;</string>
+    <string name="logging_out">Logging out&#8230;</string>
+    <string name="fill_all">Please fill in all fields</string>
+    <string name="fill_med">Please fill in at least Type, Name and Posology</string>
+    <string name="fill_imm">Please fill in at least Type, Name and Route</string>
+    <string name="bluetooth_request">Acquiring last device reading, please wait&#8230;</string>
+    <string name="bluetooth_health_profile_not_available">Your device does not support Bluetooth Health Profile. Connection canceled.</string>
+    <string name="bluetooth_not_available">Your device does not support Bluetooth pairing. Connection canceled..</string>
+    <string name="new_allergy">Add Allergy</string>
+    <string name="allergy_delete">Delete allergy to</string>
+    <string name="allergy_has_been_deleted">Allergy has been deleted</string>
+    <string name="new_immunization">Add Immunization</string>
+    <string name="immunization_delete">Delete immunization</string>
+    <string name="immunization_has_been_deleted">Immunization has been deleted</string>
+    <string name="new_medication">Add Medication</string>
+    <string name="medication_delete">Delete medication</string>
+    <string name="medication_has_been_deleted">Medication has been deleted</string>
+    <string name="enter_location">Enter location</string>
+    <string name="new_medical_history">Add Treatment History</string>
+    <string name="medical_history_delete">Delete Treatment History</string>
+    <string name="medical_history_has_been_deleted">Delete treatment history item:</string>
+    <string name="fill_medical_history_info">Please fill the Description and the Location</string>
+    <string name="add_medical_history_info">Add new treatment history</string>
+    <string name="homepage_set_to">Homepage is now set to: </string>
+    <string name="vital_signs_welcome_message">&lt;= blood pressure, weight, oxymeter readings, temperature and blood sugar. Please choose an option on the left.</string>
+    <string name="unitMin">/min</string>
+    <string name="unitMMHG">mmHg</string>
+    <string name="weight">Weight</string>
+    <string name="temperature">Temperature</string>
+    <string name="vitalHealthValues">Vital Health Values</string>
+    <string name="today">Today</string>
+    <string name="now">Now</string>
+    <string name="sys">Sys</string>
+    <string name="dia">Dia</string>
+    <string name="bpm">BPM</string>
+    <string name="o2">O2</string>
+    <string name="temp">Temp</string>
+    <string name="time">Time</string>
+    <string name="empty">empty</string>
+    <string name="title_activity_measurements">Record Measurements</string>
+    <string name="invisible">invisible</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="exit">Exit</string>
+    <string name="newRecord">New Record</string>
+    <string name="records">Records</string>
+    <string name="titleSelectMeasurement">Select Measurements</string>
+    <string name="next">Next</string>
+    <string name="settings">Settings</string>
+    <string name="logged_events">Logged Events</string>
+    <string name="date_time">Date/Time</string>
+    <string name="events">Events</string>
+    <string name="unhandled_callback_w_id">Unhandled callback with id:</string>
+    <string name="imported_document">Imported Document</string>
+    <string name="import_not_successful">Did not import document.</string>
+    <string name="notification_id">NotificationId</string>
+    <string name="requirement_time_and_date">Time and Date must be set</string>
+    <string name="bluetooth_error_5_times">AugmentedSynergy has failed to read the Blood Pressure from the bluetooth device after 5 attempts. Move the device closer and make sure it is on.</string>
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="bluetooth_success_enabled">Bluetooth has been successfully enabled!</string>
+    <string name="success">Success</string>
+    <string name="bluetooth_error_not_enabled">Please enable Bluetooth to allow communicating to the device.</string>
+    <string name="message">Message</string>
+    <string name="bloodpressure_error_unknown_req_code">"BloodPressureActivity: Unknown request code: "</string>
+    <string name="bloodsugar_error_unknown_id">"BloodSugarActivity: Unknown request code: "</string>
+    <string name="entries">Entries</string>
+    <string name="back">Back</string>
+    <string name="celsius">&quot; \u2103&quot;</string>
+
+</resources>
+

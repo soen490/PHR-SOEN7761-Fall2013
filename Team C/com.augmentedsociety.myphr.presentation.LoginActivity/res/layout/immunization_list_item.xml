@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- Immunization Name -->
+
+    <TextView
+        android:id="@+id/immunizationToListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <!-- Immunization Type -->
+
+    <TextView
+        android:id="@+id/immunizationTypeListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/immunizationToListItemTextField"
+        android:paddingLeft="10dp"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+    <!-- Immunization Route -->
+
+    <TextView
+        android:id="@+id/immunizationRouteListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/immunizationTypeListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#006600"
+        android:textSize="12sp" />
+    <!-- Immunization Mfg. -->
+
+    <TextView
+        android:id="@+id/immunizationManufacturerListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/immunizationRouteListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <!-- Immunization Lot # -->
+
+    <TextView
+        android:id="@+id/immunizationLotListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/immunizationManufacturerListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <!-- Immunization Dose -->
+
+    <TextView
+        android:id="@+id/immunizationPosologyListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/immunizationLotListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <!-- Immunization Date -->
+
+    <TextView
+        android:id="@+id/immunizationDateListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/immunizationPosologyListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <!-- Immunization Location -->
+
+    <TextView
+        android:id="@+id/immunizationLocationListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/immunizationDateListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <!-- Immunization Details -->
+
+    <TextView
+        android:id="@+id/immunizationDetailsListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/immunizationLocationListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <!-- Immunization Comments -->
+
+    <TextView
+        android:id="@+id/immunizationCommentsListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/immunizationDetailsListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+</RelativeLayout>

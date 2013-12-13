@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Augmented Synergy</string>
+    <string name="slogan">Augmented Synergy - Это наш слоган!</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="title_activity_my_phr">Augmented Synergy</string>
+    <string name="menu">Главное меню</string>
+
+    <!-- Strings for Login Activity -->
+    <string name="username">Имя пользователя</string>
+    <string name="password">Пароль</string>
+    <string name="login">Логин</string>
+    <string name="login_page">Авторизация</string>
+
+    <!-- Strings for disclaimer Activity -->
+    <string name="disclaimer">Отказ от ответственности:</string>
+    <string name="disclaimer_text">Данная программа распространяется по принципу "как есть" и всё такое, но мы ещё напишем нормальный дисклеймер если найдём время. Но по-русски лучше не читать: переводчик - полный дятел.</string>
+    <string name="accept">Принять</string>
+    <string name="decline">Отклонить</string>
+
+    <!-- Strings for Main Page Activity -->
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="welcome_text">Это - приложение для хранения медицинской книжки в электронном виде от Augmented Society!</string>
+
+    <!-- String for Wellness Activities -->
+    <string name="wellness">Самочувствие</string>
+    <string name="immunization">Прививки</string>
+    <string name="medications">Лекарства</string>
+    <string name="allergies">Аллергии</string>
+    <string name="body_temperature">Температура тела</string>
+    <string name="blood_pressure">Кровяное давление</string>
+    <string name="heart_rate">Пульс</string>
+    <string name="o2_saturation">Насыщение Кислородом</string>
+    <string name="body_weight">Вес тела</string>
+    <string name="new_entry">Добавить</string>
+    <string name="graphs">Графики</string>
+    <string name="kg">кг</string>
+    <string name="submit">Записать</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="blood_sugar">Сахар в крови</string>
+    <string name="percent">%</string>
+    <string name="fahrenheit">&quot; \u2109&quot;</string>
+    <string name="mg_dl">мг/дЛ</string>
+    <string name="systolic">Верхнее</string>
+    <string name="diastolic">Нижнее</string>
+    <string name="vital_signs">Признаки жизни</string>
+    <string name="title_activity_view_notifications">Напоминалки</string>
+    <string name="title_activity_new_notification">Новое уведомление</string>
+    <string name="title_activity_notification_details">У вас новое уведомление!</string>
+    <string name="notifications">Напоминалки</string>
+    <string name="new_notification">Создать</string>
+    <string name="enter_description">Введите описание</string>
+    <string name="repeat_interval">Периодичность:</string>
+
+    <string-array name="notif_repeat_options">
+        <item>Напомнить один раз</item>
+        <item>30 мин</item>
+        <item>1 час</item>
+        <item>3 часа</item>
+        <item>6 часов</item>
+        <item>12 часов</item>
+        <item>1 день</item>
+        <item>2 дня</item>
+        <item>1 неделя</item>
+        <item>1 месяц</item>
+    </string-array>
+
+    <string name="title_activity_alarm_handler">AlarmHandler</string>
+    <string name="table_view">Таблица</string>
+
+    <!-- Misc. Strings for Interaction" \u2109" -->
+    <string name="graph_view">График</string>
+    <string name="confirm_save">Данные сохранены.</string>
+    <string name="create_modify_profile">СОЗДАТЬ ИЛИ ИЗМЕНИТЬ ПРОФИЛЬ</string>
+    <string name="last_name">Фамилия</string>
+    <string name="first_name">Имя</string>
+    <string name="DOB">День рождения</string>
+    <string name="phone">Номер телефона</string>
+    <string name="address">Адрес</string>
+    <string name="email">Email</string>
+    <string name="medicare">Номер медицинской страховки</string>
+    <string name="insurance">Страховка</string>
+    <string name="emergency_contact_1">Родственник/друг 1</string>
+    <string name="emergency_contact_2">Родственник/друг 2</string>
+    <string name="allergy">Аллергия</string>
+    <string name="medication">Лейкарство</string>
+    <string name="medical_condition">Диагноз</string>
+    <string name="documents">Документы</string>
+    <string name="clear">Очистить</string>
+    <string name="personal_info">Личные данные</string>
+    <string name="logout">Выйти</string>
+    <string name="languages">Языки</string>
+    <string name="change_password">Сменить пароль</string>
+    <string name="set_default_page">Сделать страницей по умолчанию</string>
+    <string name="view_tutorial">Посмотреть пособие</string>
+    <string name="diagnostics">Диагностика</string>
+    <string name="current_password">Пожалуйста, введите пароль</string>
+    <string name="new_password">Пожалуйста, введите новый пароль</string>
+    <string name="new_password2">Подтвердите пароль</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="celcius">&quot; \u2103&quot;</string>
+
+    <item name="menu_info_tips" type="string">Способы лечения</item>
+    <string name="notification_deleted">Уведомление удалено</string>
+    <string name="data_saved">Данные сохранены</string>
+
+    <string name="title_activity_info_tips">Полезная информация</string>
+    <string name="info_and_tips_welcome">Вы будете перенаправлены на страницу с полезной информацией.</string>
+    <string name="hello_world">Hello World. Why is this here?</string>
+    <string name="title_activity_documents">Документы</string>
+    <string name="add_document">Добавить документ</string>
+    <string name="documents_manage">Управление документами</string>
+    <string name="sort_documents">Упорядочить документы</string>
+    <string name="clear_all_documents">Удалить все документы</string>
+    <string name="title_activity_document_form">Документ</string>
+    <string name="hint_document_title">Заголовок</string>
+    <string name="hint_document_description">Описание</string>
+    <string name="document_preview">Предварительный просмотр</string>
+    <string name="notification_saved">Уведомление сохранено!</string>
+    <string name="notification_please_specify_name">Укажите описание уведомления</string>
+    <string name="temp_desc">Температура сохранена</string>
+    <string name="gen_eventtype_error">Неверные тип данных</string>
+    <string name="disc_accept">Соглашение принято.</string>
+    <string name="disc_reject">Соглашение отклонено.</string>
+    <string name="bp_desc">Крованое давление сохранено.</string>
+    <string name="bs_desc">Сахар в крови сохранён.</string>
+    <string name="weight_desc">Вес тела сохранён.</string>
+    <string name="oxy_desc">Насыщение кисловодом сохранено.</string>
+    <string name="notif_create">Уведомление создано.</string>
+    <string name="notif_edit">Уведомление изменено.</string>
+    <string name="notif_delete">Уведомление удалено.</string>
+    <string name="profile_edit">Личные данные изменены.</string>
+    <string name="profile_delete">Личные данные удалены.</string>
+    <string name="setting_lang_edit">Изменён язык приложения.</string>
+    <string name="app_login">Успешный логин в систему.</string>
+    <string name="app_logout">Успешный выход из системы.</string>
+    <string name="app_set">Настройки изменены.</string>
+    <string name="add_document_from_camera">Добавить документ (с камеры)</string>
+    <string name="notifications_generic_error">Ошибка в модуле уведомлений. Извиняемся за неудобства.</string>
+    <string name="notifications_non_existing_notif_error">Уведомление не может быть отображено, потому что оно было удалено из базы данных.</string>
+    <string name="notifications_reminder_title">Уведомление от Augmented Synergy</string>
+    <string name="notifications_error_details_deleted">Подробности этого уведомления были удалены из базы данных</string>
+    <string name="notifications_repeats_every">Периодичность: </string>
+    <string name="notifications_interval_only_once">Напомнить один раз</string>
+    <string name="notifications_status_off">ВЫКЛ</string>
+    <string name="notifications_status_on">ВКЛ</string>
+    <string name="notifications_interval_minutes">мин.</string>
+    <string name="notifications_interval_hours">ч.</string>
+    <string name="notifications_interval_days">д.</string>
+    <string name="notifications_interval_weeks">нед.</string>
+    <string name="notifications_interval_months">мес.</string>
+    <string name="notifications_delete_question">Удалить уведомление</string>
+    <string name="button_yes">Да</string>
+    <string name="button_no">Нет</string>
+    <string name="prompt_save_again">Ошибка ввода. Проверьте данные.</string>
+    <string name="add_emergency_contact">Добавить контактные данные друга/родственника</string>
+    <string name="weight_label">Вес (кг)</string>
+    <string name="temperature_label">Температура тела (F)</string>
+    <string name="glucose_label">Сахар в крови (мг/дЛ)</string>
+    <string name="oxygen_label">Насыщение кисловодом (%)</string>
+    <string name="systolic_label">Верхнее (мм рт. ст.)</string>
+    <string name="diastolic_label">Нижнее (мм рт. ст.)</string>
+    <string name="heart_rate_label">Пульс (уд. в мин.)</string>
+    <string name="temperature_graph_title">Изменение температуры</string>
+    <string name="glucose_graph_title">Изменение сахара в крови</string>
+    <string name="oxygen_graph_title">Изменение насыщения кислорода</string>
+    <string name="blood_pressure_graph_title">Изменение кровяного давления</string>
+    <string name="weight_graph_title">Изменение веса</string>
+    <string name="date">Дата</string>
+    <string name="visible">Отображать</string>
+    <string name="enabled">Вкл</string>
+    <string name="disabled">Выкл</string>
+    <string name="loading">Подождите&#8230;</string>
+
+    <!--  Personal information strings -->
+    <string name="personal_iformation_welcome_header">Личные данные</string>
+    <string name="personal_information_welcome_message">Здесь записываются ваши личные данные. Вы можете указать ваши аллергии, лекарства, прививки, болезни и дополнительные документы. Выберете категорию слева.</string>
+    <string name="nurse_image_content_description">Медсестра</string>
+    
+    <!-- Settings strings -->
+    <string name="settings_welcome_header">Настройки</string>
+    <string name="settings_welcome_message">Здесь вы можете изменить язык программы, поменять пароль, редактировать документы. </string>
+    <string name="settings_icon_description">Иконка настроек</string>
+    <string name="diagnostics_title">Диагностика</string>
+    <string name="allergen">Аллергия на&#8230;</string>
+    <string name="allergy_reaction">Аллергические реакции</string>
+    <string name="reaction">Реакция</string>
+    <string name="severity">Серьёзность</string>
+    <string name="low">Низкая</string>
+    <string name="medium">Средняя</string>
+    <string name="high">Высокая</string>
+    <string name="details">Подробности</string>
+    <string name="comments">Комментарии</string>
+    <string name="followUp">В завершение</string>
+    <string name="location">Место</string>
+    <string name="location_received">Место прививки</string>
+    <string name="posology">Дозировка</string>
+    <string name="dosage">Дозировка</string>
+    <string name="injection">Укол</string>
+    <string name="immunization_route">Как првито?</string>
+    <string name="oral">Орально</string>
+    <string name="lot">Lot</string>
+    <string name="lot_number">Lot номер</string>
+    <string name="company_name">Компания</string>
+    <string name="manufacturer">Производитель</string>
+    <string name="type">Тип</string>
+    <string name="immunization_name">Имя прививки</string>
+    <string name="immunization_type">Тип прививки</string>
+    <string name="doctor">Доктор</string>
+    <string name="prescribed_by">По рецепту от&#8230;</string>
+    <string name="reason">Причины</string>
+    <string name="reason_for_prescription">Причины для рецепта</string>
+    <string name="end_date">Окончание</string>
+    <string name="start_date">Начало</string>
+    <string name="schedule">Расписание</string>
+    <string name="frequency">Периодичность</string>
+    <string name="concentration">Концентрация</string>
+    <string name="strength">Сила</string>
+    <string name="medication_name">Название лекарства</string>
+    <string name="medication_type">Тип лекарства</string>
+    <string name="clear_logs">Очистить всё</string>
+    <string name="dob">День рождения</string>
+    <string name="emergency_contacts">Контактные данные друзей/родственников</string>
+</resources>
+

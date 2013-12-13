@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/heartRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:onClick="rowPressed" >
+
+            <ImageView
+                android:id="@+id/heartIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="iconPressed"
+                android:src="@drawable/heart" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBloodPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkboxPressed"
+                android:text="@string/blood_pressure" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weightRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dcdcdc"
+            android:orientation="horizontal"
+            android:onClick="rowPressed" >
+
+            <ImageView
+                android:id="@+id/weightIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="iconPressed"
+                android:src="@drawable/weight_small" />
+
+            <CheckBox
+                android:id="@+id/checkBoxWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkboxPressed"
+                android:text="@string/weight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/o2Row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:onClick="rowPressed" >
+
+            <ImageView
+                android:id="@+id/handIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="iconPressed"
+                android:src="@drawable/o2hand" />
+
+            <CheckBox
+                android:id="@+id/checkBoxO2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkboxPressed"
+                android:text="@string/o2_saturation" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/temperatureRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dcdcdc"
+            android:orientation="horizontal"
+            android:onClick="rowPressed" >
+
+            <ImageView
+                android:id="@+id/thermometerIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="iconPressed"
+                android:src="@drawable/thermometer" />
+
+            <CheckBox
+                android:id="@+id/checkBoxTempature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkboxPressed"
+                android:text="@string/temperature" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/diabetesRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:onClick="rowPressed" >
+
+            <ImageView
+                android:id="@+id/diabetesIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:onClick="iconPressed"
+                android:src="@drawable/diabetes" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBlood_sugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="checkboxPressed"
+                android:text="@string/blood_sugar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:onClick="nextButtonClicked"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

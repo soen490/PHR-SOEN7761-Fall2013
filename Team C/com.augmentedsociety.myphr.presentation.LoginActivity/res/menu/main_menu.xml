@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_help"
+        android:icon="@drawable/ic_menu_help"
+        android:showAsAction="always"
+        android:title="@string/menu">
+        
+    </item>
+    <item
+        android:icon="@drawable/ic_menu_moreoverflow"
+        android:showAsAction="always"
+        android:title="@string/menu">
+        <menu>
+            <item
+                android:id="@+id/menu_wellness"
+                android:icon="@drawable/heart"
+                android:title="@string/vital_signs"/>
+            <item
+                android:id="@+id/menu_graphs"
+                android:icon="@drawable/menu_graph"
+                android:title="@string/graphs"/>
+            <item
+                android:id="@+id/menu_personal_info"
+                android:icon="@drawable/person"
+                android:title="@string/personal_info"/>
+            <item
+                android:id="@+id/menu_notifications"
+                android:icon="@drawable/notification"
+                android:title="@string/notifications"/>
+            <item
+                android:id="@+id/menu_settings"
+                android:icon="@drawable/password_icon"
+                android:title="@string/menu_settings"/>
+            <item
+                android:id="@+id/menu_info_tips"
+                android:icon="@drawable/information"
+                android:title="@string/menu_info_tips"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- Medication Name -->
+
+    <TextView
+        android:id="@+id/medicationToListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <!-- Medication Type -->
+
+    <TextView
+        android:id="@+id/medicationTypeListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicationToListItemTextField"
+        android:paddingLeft="10dp"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+    <!-- Medication Dosage -->
+
+    <TextView
+        android:id="@+id/medicationPosologyListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicationTypeListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#006600"
+        android:textSize="12sp" />
+    <!-- Medication Strength -->
+
+    <TextView
+        android:id="@+id/medicationStrengthListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicationPosologyListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <!-- Medication Frequency -->
+
+    <TextView
+        android:id="@+id/medicationFrequencyListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicationStrengthListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <!-- Medication Start Date -->
+
+    <TextView
+        android:id="@+id/medicationStartDateListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicationFrequencyListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <!-- Medication End Date -->
+
+    <TextView
+        android:id="@+id/medicationEndDateListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicationStartDateListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <!-- Medication Reasons -->
+
+    <TextView
+        android:id="@+id/medicationReasonsListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicationEndDateListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <!-- Medication Doctor -->
+
+    <TextView
+        android:id="@+id/medicationDoctorListItemTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicationReasonsListItemTextField"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+</RelativeLayout>
