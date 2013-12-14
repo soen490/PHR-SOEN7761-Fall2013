@@ -1,0 +1,68 @@
+<html>
+<head>
+<script type="text/javascript" src="flotr2.js"></script>
+<script type="text/javascript">
+ 
+ function graph()
+ {
+ var
+    d1 = [%DATA1%], // First data series
+    d2 = [%DATA2%], // First data series
+    d3 = [%DATA3%], // First data series
+    o, graph, options;
+
+  // Draw Graph
+  options = {
+    title: '%TITLE%',
+    xaxis: {
+      minorTickFreq: 4,
+      mode: "time"
+    }, 
+    selection : {
+      mode : 'x'
+    },
+    grid: {
+      minorVerticalLines: true
+    },
+    lines : { show : true },
+    points : { show : true },
+    legend: { show : true }
+  };
+  
+  // Draw graph with default options, overwriting with passed options
+  function drawGraph (opts) 
+  {
+
+    // Clone the options, so the 'options' variable always keeps intact.
+    o = Flotr._.extend(Flotr._.clone(options), opts || {});
+
+    // Return a new graph.
+    return Flotr.draw(
+      document.getElementById("graph"),
+      [ {data: d1, label: '%LABEL1%' }, {data: d2, label: '%LABEL2%' }, {data: d3, label: '%LABEL3%' } ],
+      o
+    );
+  }
+
+  graph = drawGraph();      
+        
+  Flotr.EventAdapter.observe(document.getElementById("graph"), 'flotr:select', function(area){
+    // Draw selected area
+    graph = drawGraph({
+      xaxis : { min : area.x1, max : area.x2, mode : 'time', labelsAngle : 45 },
+      yaxis : { min : area.y1, max : area.y2 }
+    });
+  });
+        
+  // When graph is clicked, draw the graph with default area.
+  Flotr.EventAdapter.observe(document.getElementById("graph"), 'flotr:click', function () { graph = drawGraph(); });
+
+ }
+</script>
+</head>
+<body onload="graph()">
+
+<div id="graph" style="height:80%;"></div>
+</body>
+</html>
+EOF

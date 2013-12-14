@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:id="@+id/immunization_type_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/immunization_type"
+            android:textColor="#E01B1B" />
+
+        <EditText
+            android:id="@+id/immunization_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/type" />
+
+        <TextView
+            android:id="@+id/immunization_name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/immunization_name"
+            android:textColor="#E01B1B" />
+
+        <EditText
+            android:id="@+id/immunization_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/immunization" />
+
+        <TextView
+            android:id="@+id/immunization_mfg_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/manufacturer" />
+
+        <EditText
+            android:id="@+id/immunization_mfg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/company_name" />
+
+        <TextView
+            android:id="@+id/immunization_lot_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lot_number" />
+
+        <EditText
+            android:id="@+id/immunization_lot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/lot" />
+
+        <TextView
+            android:id="@+id/immunization_route_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/immunization_route"
+            android:textColor="#E01B1B" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupImm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/oral_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oral" />
+
+            <RadioButton
+                android:id="@+id/inject_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/injection" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/immunization_dosage_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/posology" />
+
+        <EditText
+            android:id="@+id/immunization_dosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/dosage" />
+
+        <TextView
+            android:id="@+id/immunization_date_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRowDTI"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/dateButtonImm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:onClick="dateButtonPressedImm"
+                    android:text="@string/date" />
+
+                <DatePicker
+                    android:id="@+id/datePickerImm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:calendarViewShown="false"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowTII"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/timeButtonImm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="timeButtonPressedImm"
+                    android:text="@string/time" />
+
+                <TimePicker
+                    android:id="@+id/timePickerImm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/immunization_loc_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location_received" />
+
+            <EditText
+                android:id="@+id/immunization_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:singleLine="true"
+                android:hint="@string/location" />
+
+            <TextView
+                android:id="@+id/immunization_followUp_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/followUp" />
+
+            <EditText
+                android:id="@+id/immunization_followUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:singleLine="true"
+                android:hint="@string/details" />
+
+            <TextView
+                android:id="@+id/immunization_comments_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/comments" />
+
+            <EditText
+                android:id="@+id/immunization_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:singleLine="true"
+                android:inputType="text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:onClick="handleCancel"
+                    android:text="@string/cancel" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:onClick="submit"
+                    android:text="@string/save" />
+            </LinearLayout>
+        </TableLayout>
+    </TableLayout>
+
+</ScrollView>

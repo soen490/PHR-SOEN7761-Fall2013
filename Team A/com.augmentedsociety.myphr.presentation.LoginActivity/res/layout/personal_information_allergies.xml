@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/allergy_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/allergen"
+            android:textColor="#E01B1B" />
+
+        <EditText
+            android:id="@+id/allergy_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/allergy" />
+
+        <TextView
+            android:id="@+id/allergic_reaction_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/allergy_reaction"
+            android:textColor="#E01B1B" />
+
+        <EditText
+            android:id="@+id/allergy_reaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/reaction" />
+
+        <TextView
+            android:id="@+id/allergy_severity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/severity"
+            android:textColor="#E01B1B" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupAllergy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/low_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/low" />
+
+            <RadioButton
+                android:id="@+id/medium_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/medium" />
+
+            <RadioButton
+                android:id="@+id/high_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/high" />
+        </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="5px"
+        android:gravity="center_horizontal|bottom"
+        android:paddingTop="2px" >
+
+        <Button
+            android:id="@+id/cancel_allergy_creation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:onClick="handleCancel"
+            android:text="@string/cancel" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:onClick="submit"
+            android:text="@string/save" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

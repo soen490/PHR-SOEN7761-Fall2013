@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.augmentedsociety.myphr"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.PreparationActivity"
+            android:label="@string/title_activity_my_phr"
+            android:screenOrientation="portrait" > 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+                <activity
+            android:name="com.augmentedsociety.myphr.presentation.LoginActivity"
+            android:label="@string/title_activity_my_phr" 
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.DisclaimerActivity"
+            android:label="@string/title_activity_discalimer" 
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.augmentedsociety.myphr.presentation.MainPageActivity" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.SettingsActivity"
+            android:configChanges="orientation|screenSize" 
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.PersonalInformationActivity"
+            android:configChanges="orientation|screenSize" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.personalInfo.PersonalInformationReadingActivity"
+            android:configChanges="orientation|screenSize" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.vitalsigns.VitalSignsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_measurements"
+            android:windowSoftInputMode="stateHidden|adjustResize" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.vitalsigns.BloodPressureActivity"
+            android:windowSoftInputMode="stateUnchanged" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.vitalsigns.BloodSugarActivity"
+            android:windowSoftInputMode="stateUnchanged" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.vitalsigns.O2Activity"
+            android:windowSoftInputMode="stateUnchanged" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.vitalsigns.TemperatureActivity"
+            android:windowSoftInputMode="stateUnchanged" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.augmentedsociety.myphr.presentation.vitalsigns.WeightActivity" 
+            android:windowSoftInputMode="stateUnchanged" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.vitalsigns.GraphActivity"
+            android:configChanges="orientation|screenSize" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.augmentedsociety.myphr.presentation.vitalsigns.TableGraphActivity" 
+            android:screenOrientation="portrait">
+        </activity>
+
+        <receiver android:name="com.augmentedsociety.myphr.domain.notifications.BootCompletedBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.notifications.ViewNotificationsActivity"
+            android:label="@string/title_activity_view_notifications" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.notifications.NewNotificationActivity"
+            android:label="@string/title_activity_new_notification" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.notifications.NotificationDetailsActivity"
+            android:label="@string/title_activity_notification_details" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.augmentedsociety.myphr.presentation.notifications.NotificationDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.notifications.AlarmHandler"
+            android:label="@string/title_activity_alarm_handler" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.augmentedsociety.myphr.presentation.notifications.AlarmHandler" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.medicalhistory.ViewMedicalHistoryActivity"
+            android:label="@string/title_activity_info_tips"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.documents.DocumentsActivity"
+            android:label="@string/title_activity_documents"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.documents.DocumentFormActivity"
+            android:label="@string/title_activity_document_form"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.medicalhistory.NewMedicalHistoryActivity"
+            android:label="@string/add_medical_history_info"
+            android:screenOrientation="portrait" >
+        </activity>
+                <activity
+            android:name="com.augmentedsociety.myphr.presentation.GraphsActivity"
+            android:label="@string/graphs"
+            android:screenOrientation="portrait" >
+        </activity>
+                        <activity
+            android:name="com.augmentedsociety.myphr.presentation.vitalsigns.RecordList"
+            android:label="@string/graphs"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.augmentedsociety.myphr.presentation.vitalsigns.TimeActivity"
+            android:configChanges="orientation|screenSize" 
+            android:screenOrientation="portrait">
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:id="@+id/medication_type_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/medication_type"
+            android:textColor="#E01B1B" />
+
+        <EditText
+            android:id="@+id/medication_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/type" />
+
+        <TextView
+            android:id="@+id/medication_name_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/medication_name"
+            android:textColor="#E01B1B" />
+
+        <EditText
+            android:id="@+id/medication_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/medication" />
+
+        <TextView
+            android:id="@+id/medication_dosage_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/posology"
+            android:textColor="#E01B1B" />
+
+        <EditText
+            android:id="@+id/medication_dosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/dosage" />
+
+        <TextView
+            android:id="@+id/medication_concentration_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strength" />
+
+        <EditText
+            android:id="@+id/medication_concentration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/concentration" />
+
+        <TextView
+            android:id="@+id/medication_frequency_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/frequency" />
+
+        <EditText
+            android:id="@+id/medication_frequency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/schedule" />
+
+        <TextView
+            android:id="@+id/medication_startDate_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_date" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRowDTMstart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/startDateButtonMedication"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:onClick="startDateButtonPressed"
+                    android:text="@string/date" />
+
+                <DatePicker
+                    android:id="@+id/datePickerMedStart"
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:calendarViewShown="false"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowTIMstart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TimePicker
+                    android:id="@+id/timePickerMedStart"
+                    android:layout_width="0dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/startTimeButtonMedication"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="startTimeButtonPressed"
+                    android:text="@string/time" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/medication_endDate_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/end_date" />
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRowDTMend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button 
+                    android:id="@+id/endDateButtonMedication"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="endDateButtonPressed"
+                    android:text="@string/date"
+                    />
+                
+                <DatePicker
+                    android:id="@+id/datePickerMedEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:calendarViewShown="false"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowTIMend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/endTimeButtonMedication"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="endTimeButtonPressed"
+                    android:text="@string/time"
+                    />
+                
+                <TimePicker
+                    android:id="@+id/timePickerMedEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/medication_reason_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reason_for_prescription" />
+
+        <EditText
+            android:id="@+id/medication_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/reason" />
+
+        <TextView
+            android:id="@+id/medication_prescriber_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prescribed_by" />
+
+        <EditText
+            android:id="@+id/medication_prescriber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="@string/doctor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:onClick="handleCancel"
+                android:text="@string/cancel" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:onClick="submit"
+                android:text="@string/save" />
+        </LinearLayout>
+    </TableLayout>
+
+</ScrollView>

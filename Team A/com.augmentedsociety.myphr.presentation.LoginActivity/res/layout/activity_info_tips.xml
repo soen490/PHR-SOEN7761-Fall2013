@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/new_medical_history_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="newMedicalHistory"
+        android:text="@string/new_medical_history" />
+
+    <ListView
+        android:id="@+id/medical_history_available"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_medical_history_button" >
+    </ListView>
+
+</RelativeLayout>

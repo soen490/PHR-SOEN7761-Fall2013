@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button  
+      android:id="@+id/new_medication_button"  
+      android:layout_height="wrap_content"  
+      android:text="@string/new_medication"  
+      android:layout_width="fill_parent"
+      android:onClick="submit">  
+    </Button>   
+  
+    <ListView 
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent" android:id="@+id/medications_available"
+    android:layout_below="@+id/new_medication_button"
+    />
+   
+
+</RelativeLayout>

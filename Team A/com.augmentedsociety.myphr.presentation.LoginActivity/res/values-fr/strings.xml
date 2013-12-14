@@ -1,0 +1,250 @@
+<resources>
+
+     <string name="app_name">Augmented Synergy</string>
+    <string name="slogan">Augmented Synergy - Ceci est notre slogan.</string>
+    <string name="menu_settings">Paramètres</string>
+    <string name="title_activity_my_phr">Augmented Synergy</string>
+    <string name="menu">Menu</string>
+
+    <!-- Strings for Login Activity -->
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="password">Mot de passe</string>
+    <string name="login">Se connecter</string>
+    <string name="login_page">Page d\'authentification</string>
+
+    <!-- Strings for disclaimer Activity -->
+    <string name="disclaimer">Clause de non-responsabilité:</string>
+    <string name="disclaimer_text">L\'utilisateur de la version BETA AugmentedSynergy comprend que cette version est une demo et qu\'elle comprend donc plusieurs fonctionalités en construction qui ne fonctionne qu\'en partie.</string>
+    <string name="accept">Accepter</string>
+    <string name="decline">Refuser</string>
+
+    <!-- Strings for Main Page Activity -->
+    <string name="welcome">Bienvenue!</string>
+    <string name="welcome_text">Voici l\'application de suivi médical personnel offert par Augmented Society!</string>
+
+    <!-- String for Wellness Activities -->
+    <string name="wellness">Bien-être</string>
+    <string name="immunization">Immunization</string>
+    <string name="medications">Médications</string>
+    <string name="allergies">Allergies</string>
+    <string name="body_temperature">Température corporelle</string>
+    <string name="blood_pressure">Pression sanguine</string>
+    <string name="heart_rate">Pression artérielle</string>
+    <string name="o2_saturation">Saturation d\'O2</string>
+    <string name="body_weight">Poids</string>
+    <string name="new_entry">Enregistrer une mesure.</string>
+    <string name="graphs">Graphiques</string>
+    <string name="kg">kg</string>
+    <string name="submit">Enregistrer</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="blood_sugar">Glycémie</string>
+    <string name="percent">%</string>
+    <string name="fahrenheit">&quot; \u2109&quot;</string>
+    <string name="mg_dl">mg/dL</string>
+    <string name="systolic">Systolique</string>
+    <string name="diastolic">Diastolique</string>
+    <string name="vital_signs">Signes vitaux</string>
+    <string name="title_activity_view_notifications">Rappels</string>
+    <string name="title_activity_new_notification">Nouveau rappel</string>
+    <string name="title_activity_notification_details">Vous avez un rappel!</string>
+    <string name="notifications">Rappels</string>
+    <string name="new_notification">Créer un rappel</string>
+    <string name="enter_description">Entrer une description:</string>
+    <string name="repeat_interval">Répéter une intervalle:</string>
+
+    <string-array name="notif_repeat_options">
+        <item>Seulement qu\'une fois</item>
+        <item>30 mins</item>
+        <item>1 heure</item>
+        <item>3 heures</item>
+        <item>6 heures</item>
+        <item>12 heures</item>
+        <item>1 jour</item>
+        <item>2 jours</item>
+        <item>1 semaine</item>
+        <item>1 mois</item>
+    </string-array>
+
+    <string name="title_activity_alarm_handler">AlarmHandler</string>
+    <string name="table_view">Table</string>
+
+    <!-- Misc. Strings for Interaction" \u2109" -->
+    <string name="graph_view">Graphique</string>
+    <string name="confirm_save">Données sauvergardées.</string>
+    <string name="create_modify_profile">Créer ou modifier un profil</string>
+    <string name="last_name">Nom de famille</string>
+    <string name="first_name">Prénom</string>
+    <string name="DOB">Date de naissance</string>
+    <string name="phone">Téléphone</string>
+    <string name="address">Adresse</string>
+    <string name="email">Courriel</string>
+    <string name="medicare">Assurance Maladie</string>
+    <string name="insurance">Assurance santé</string>
+    <string name="emergency_contact_1">Contact en cas d\'urgence 1</string>
+    <string name="emergency_contact_2">Contact en cas d\'urgence 2</string>
+    <string name="allergy">Allergie</string>
+    <string name="medication">Médication</string>
+    <string name="medical_condition">Condition médicale</string>
+    <string name="documents">Documents</string>
+    <string name="clear">Effacer</string>
+    <string name="personal_info">Information personelle</string>
+    <string name="logout">Se déconnecter</string>
+    <string name="languages">Langues</string>
+    <string name="change_password">Change Password</string>
+    <string name="set_default_page">Choisir la page par défaut</string>
+    <string name="view_tutorial">Voir le tutoriel</string>
+    <string name="diagnostics">Diagnostic</string>
+    <string name="current_password">Mot de passe actuel</string>
+    <string name="new_password">Nouveau mot de passe</string>
+    <string name="new_password2">Confirmer le nouveau mot de passe</string>
+    <string name="save">Sauvegarder</string>
+    <string name="cancel">Annuler</string>
+    <string name="celcius">&quot; \u2103&quot;</string>
+
+    <item name="menu_info_tips" type="string">Historique de Traitement</item>
+    <string name="notification_deleted">Le rappel a été supprimé</string>
+    <string name="data_saved">Données enregistrées</string>
+
+    <string name="title_activity_info_tips">Infos et conseils</string>
+    <string name="info_and_tips_welcome">Vous allez être redirigé pour trouver des informations et des conseils dans cette section.gérer</string>
+    <string name="hello_world">Bonjour Monde? Pourquoi est-ce ici? Pourquoi est-il traduit?</string>
+    <string name="title_activity_documents">Documents</string>
+    <string name="add_document">Ajouter un document</string>
+    <string name="documents_manage">Gérer les documents</string>
+    <string name="sort_documents">Arranger les documents</string>
+    <string name="clear_all_documents">Effacer tous les documents</string>
+    <string name="title_activity_document_form">Document</string>
+    <string name="hint_document_title">Titre du document</string>
+    <string name="hint_document_description">Description</string>
+    <string name="document_preview">Aperçu</string>
+    <string name="notification_saved">Le rappel a été sauvegardé</string>
+    <string name="notification_please_specify_name">Veuillez nommer le rappel</string>
+    <string name="temp_desc">Température sauvegardée</string>
+    <string name="gen_eventtype_error">Type d\'événement invalide</string>
+    <string name="disc_accept">Clause de non-responsabilité acceptée</string>
+    <string name="disc_reject">Clause de non-responsabilité refusée</string>
+    <string name="bp_desc">Pression sanguine enregistrée.</string>
+    <string name="bs_desc">Glycémie enregistrée.</string>
+    <string name="weight_desc">Poids enregistré.</string>
+    <string name="oxy_desc">Saturation d\'O2 enregistré.</string>
+    <string name="notif_create">Rappel créé.</string>
+    <string name="notif_edit">Rappel modifié.</string>
+    <string name="notif_delete">Rappel supprimé.</string>
+    <string name="profile_edit">Option de profil modifiée.</string>
+    <string name="profile_delete">Option de profil supprimée.</string>
+    <string name="setting_lang_edit">Langue de l\'application modifiée.</string>
+    <string name="app_login">Session ouverte avec succès.</string>
+    <string name="app_logout">Session fermée avec succès.</string>
+    <string name="app_set">Paramètres modifiés.</string>
+    <string name="add_document_from_camera">Ajouter un document (via le caméra)</string>
+    <string name="notifications_generic_error">Le module de rappels a rencontré une erreur. Nous nous excusons pour les inconvnéiences.</string>
+    <string name="notifications_non_existing_notif_error">Un rappel AugmentedSynergy ne peut être affiché car il a été éfacé.</string>
+    <string name="notifications_reminder_title">Rappel AugmentedSynergy</string>
+    <string name="notifications_error_details_deleted">Les détails de ce rappel ont été éfacés de la base de données</string>
+    <string name="notifications_repeats_every">Répéter à chaque</string>
+    <string name="notifications_interval_only_once">Rappel unique</string>
+    <string name="notifications_status_off">Inactivé</string>
+    <string name="notifications_status_on">Activé</string>
+    <string name="notifications_interval_minutes">min.</string>
+    <string name="notifications_interval_hours">h.</string>
+    <string name="notifications_interval_days">j.</string>
+    <string name="notifications_interval_weeks">sem.</string>
+    <string name="notifications_interval_months">mois</string>
+    <string name="notifications_delete_question">Supprimer le rappel</string>
+    <string name="button_yes">Oui</string>
+    <string name="button_no">Non</string>
+    <string name="prompt_save_again">Lecture erronée. Veuillez vérifier les valeurs.</string>
+    <string name="add_emergency_contact">Ajouter un contact d\'urgence</string>
+    <string name="weight_label">Poids (kg)</string>
+    <string name="temperature_label">Température (F)</string>
+    <string name="glucose_label">Glycémie (mg/dL)</string>
+    <string name="oxygen_label">Saturation d\'oxygène (%)</string>
+    <string name="systolic_label">Systolique (mmHg)</string>
+    <string name="diastolic_label">Diastolique (mmHg)</string>
+    <string name="heart_rate_label">Fréquence cardiaque (bpm)</string>
+    <string name="temperature_graph_title">Tendances de la température</string>
+    <string name="glucose_graph_title">Tendances glycémiques</string>
+    <string name="oxygen_graph_title">Tendances de la saturation d\'O2</string>
+    <string name="blood_pressure_graph_title">Tendances de la pression sanguine</string>
+    <string name="weight_graph_title">Tendances du poids</string>
+    <string name="date">Date</string>
+    <string name="visible">Visible</string>
+    <string name="enabled">Activé</string>
+    <string name="disabled">Inactivé</string>
+
+    <!--  Personal information strings -->
+    <string name="personal_iformation_welcome_header">Renseignements personnels</string>
+    <string name="personal_information_welcome_message">Cette section permet d\'enregistrer tous vos renseignements personnels. Vous êtes en mesure de préciser vos allergies, les médicaments, les vaccinations, les conditions médicales et les documents ici. S\'il vous plaît choisir une option à la gauche.</string>
+    <string name="nurse_image_content_description">Infirmière</string>
+    
+    <!-- Settings strings -->
+    <string name="settings_welcome_header">Paramètres</string>
+    <string name="settings_welcome_message">Cette section vous permet de configurer la langue de l\'application, changer votre mot de passe et de modifier vos documents.</string>
+    <string name="settings_icon_description">Icone appareils de paramètres</string>
+    <string name="diagnostics_title">Diagnostic</string>
+    <string name="allergen">Allergène&#8230;</string>
+    <string name="allergy_reaction">Réaction(s) allergiques</string>
+    <string name="reaction">Réaction</string>
+    <string name="severity">Sévérité de la réaction</string>
+    <string name="low">Basse</string>
+    <string name="medium">Moyenne</string>
+    <string name="high">Haute</string>
+    <string name="details">Détails</string>
+    <string name="comments">Commentaires</string>
+    <string name="followUp">Détails de suivi</string>
+    <string name="location">Emplacement</string>
+    <string name="location_received">Endroit de l\'immunization</string>
+    <string name="posology">Posologie</string>
+    <string name="dosage">Dosage</string>
+    <string name="injection">Injection</string>
+    <string name="immunization_route">Route de l\'immunization</string>
+    <string name="oral">Orale</string>
+    <string name="lot">Lot</string>
+    <string name="lot_number">Numéro de lot</string>
+    <string name="company_name">Nom de la compagnie</string>
+    <string name="manufacturer">Manufacturier</string>
+    <string name="type">Type</string>
+    <string name="immunization_name">Nom de l\'immunization</string>
+    <string name="immunization_type">Type de l\'immunization</string>
+    <string name="doctor">Médecin</string>
+    <string name="prescribed_by">Prescrite par&#8230;</string>
+    <string name="reason">Raisons(s)</string>
+    <string name="reason_for_prescription">Raisons(s) pour la prescription</string>
+    <string name="end_date">Date de fin</string>
+    <string name="start_date">Date de début</string>
+    <string name="schedule">Horaire</string>
+    <string name="frequency">Fréquence</string>
+    <string name="concentration">Concentration</string>
+    <string name="strength">Force</string>
+    <string name="medication_name">Nom du médicament</string>
+    <string name="medication_type">Type du médicament</string>
+    <string name="clear_logs">Tout effacer</string>
+    <string name="dob">Date de naissance</string>
+    <string name="emergency_contacts">Contact d\'urgence</string>
+    <string name="loading">Chargement, veuillez patienter&#8230;</string>
+    <string name="logging_out">Déconnexion&#8230;</string>
+	<string name="fill_all">Veuillez entrer toutes les données requises</string>
+    <string name="fill_med">Veuillez entrer au moins le type, nom et la posologie</string>
+    <string name="fill_imm">Veuillez entrer au moins le type, name et la route</string>
+    <string name="welcome2">Bienvenue</string>
+    <string name="bluetooth_request">Acquisition du dernier résultat, veuillez patienter&#8230;</string>
+    <string name="bluetooth_health_profile_not_available">Votre appareil ne supporte pas le "Bluetooth Health Profile". Connection annulée.</string>
+    <string name="bluetooth_not_available">Votre appareil ne supporte pas Bluetooth. Connection annulée.</string>
+    <string name="new_allergy">Ajouter une allergie</string>
+    <string name="allergy_delete">Supprimer l\'allergie à</string>
+    <string name="allergy_has_been_deleted">L\'allergie a été supprimée</string>
+    <string name="new_immunization">Ajouter une immunization</string>
+    <string name="immunization_delete">Supprimer l\'immunization</string>
+    <string name="immunization_has_been_deleted">L\'immunization a été supprimée</string>
+    <string name="new_medication">Ajouter un médicament</string>
+    <string name="medication_delete">Supprimer médicament</string>
+    <string name="medication_has_been_deleted">Le médicament a été supprimé</string>
+    <string name="enter_location">Entrer votre emplacement</string>
+    <string name="new_medical_history">Ajouter antécédent médical</string>
+    <string name="medical_history_delete">Supprimer antécédent médical</string>
+    <string name="medical_history_has_been_deleted">Cet antécédent médical a a été supprimé:</string>
+    <string name="fill_medical_history_info">Veuillez entrer la description et l\'emplacement</string>
+    <string name="add_medical_history_info">Ajouter un nouveau antécédent médical</string>
+    <string name="homepage_set_to">La page d\'acceuil a été changé à:</string>
+    <string name="vital_signs_welcome_message">Cette section vous permet d\'enregistrer vos signes vitaux. Vous pouvez entrer votre pression sanguine, votre poids, votre saturation d\'O2, votre température corporelle et votre glycémie. Veuillez choisir une option à la gauche.</string>
+</resources>
